@@ -14,6 +14,13 @@ export interface ChartData {
   [key: string]: any
 }
 
+export interface RevenueData {
+  name: string
+  revenue: number
+  expenses: number
+  profit: number
+}
+
 export interface Employee {
   id: string
   name: string
@@ -106,7 +113,7 @@ export const mockKPIs: KPI[] = [
   }
 ]
 
-export const revenueData: ChartData[] = [
+export const revenueData: RevenueData[] = [
   { name: 'Jan', revenue: 180000, expenses: 120000, profit: 60000 },
   { name: 'Feb', revenue: 220000, expenses: 140000, profit: 80000 },
   { name: 'Mar', revenue: 190000, expenses: 130000, profit: 60000 },
