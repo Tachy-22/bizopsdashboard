@@ -21,6 +21,30 @@ export interface RevenueData {
   profit: number
 }
 
+export interface DepartmentPerformanceData {
+  name: string
+  efficiency: number
+  satisfaction: number
+  productivity: number
+}
+
+export interface SalesRegionData {
+  name: string
+  value: number
+  percentage: number
+}
+
+export interface CustomerSegmentData {
+  name: string
+  value: number
+  customers: number
+}
+
+export interface MonthlyActiveUsersData {
+  name: string
+  users: number
+}
+
 export interface Employee {
   id: string
   name: string
@@ -302,7 +326,7 @@ export const operationMetrics: OperationMetric[] = [
   }
 ]
 
-export const departmentPerformanceData: ChartData[] = [
+export const departmentPerformanceData: DepartmentPerformanceData[] = [
   { name: 'Engineering', efficiency: 92, satisfaction: 88, productivity: 95 },
   { name: 'Sales', efficiency: 87, satisfaction: 91, productivity: 89 },
   { name: 'Marketing', efficiency: 83, satisfaction: 85, productivity: 87 },
@@ -311,7 +335,7 @@ export const departmentPerformanceData: ChartData[] = [
   { name: 'Finance', efficiency: 91, satisfaction: 87, productivity: 90 }
 ]
 
-export const salesByRegionData: ChartData[] = [
+export const salesByRegionData: SalesRegionData[] = [
   { name: 'North America', value: 145000, percentage: 35 },
   { name: 'Europe', value: 128000, percentage: 31 },
   { name: 'Asia Pacific', value: 89000, percentage: 22 },
@@ -319,14 +343,14 @@ export const salesByRegionData: ChartData[] = [
   { name: 'Middle East & Africa', value: 16000, percentage: 4 }
 ]
 
-export const customerSegmentData: ChartData[] = [
+export const customerSegmentData: CustomerSegmentData[] = [
   { name: 'Enterprise', value: 45, customers: 156 },
   { name: 'Mid-Market', value: 30, customers: 342 },
   { name: 'Small Business', value: 20, customers: 567 },
   { name: 'Startup', value: 5, customers: 183 }
 ]
 
-export const monthlyActiveUsers: ChartData[] = [
+export const monthlyActiveUsers: MonthlyActiveUsersData[] = [
   { name: 'Jan', users: 12400 },
   { name: 'Feb', users: 13200 },
   { name: 'Mar', users: 12800 },
